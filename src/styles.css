@@ -1,0 +1,45 @@
+.aurelia-accordion-panel-header {
+    cursor: pointer;
+    background: lightgray;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;   
+    padding: 2px 5px; 
+}
+
+::-moz-selection { /* Code for Firefox */
+    opacity: 0;
+}
+
+::selection {
+    opacity: 0;
+}
+
+.aurelia-accordion-panel-body-inactive {
+	max-height: 0;
+	overflow: hidden;
+
+	-webkit-transition: max-height 0.1s;
+	-moz-transition: max-height 0.1s;
+	transition: max-height 0.1s;
+}
+
+.aurelia-accordion-panel-body-active {
+    max-height: 9999px;
+
+    -webkit-transition: max-height 0.3s;
+	-moz-transition: max-height 0.3s;
+	transition: max-height 0.3s;
+}
+
+.aurelia-accordion-panel {
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+}
+
+.aurelia-accordion {
+
+}
+
+.aurelia-accordion > :not(:last-child) {
+    margin-bottom: 5px;
+}
