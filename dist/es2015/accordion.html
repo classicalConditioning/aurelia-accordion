@@ -1,0 +1,11 @@
+<template>
+  <require from="./styles.css"></require>
+  <div class="aurelia-accordion">
+    <div id="panel-${$index}" class="aurelia-accordion-panel" repeat.for="panel of panels">
+      <div id="panel-header-${$index}" class="aurelia-accordion-panel-header" click.delegate="toggle($index)">${panel.title}</div>
+      <div id="panel-body-${$index}" class="${panel.active ? 'aurelia-accordion-panel-body-active' : 'aurelia-accordion-panel-body-inactive'}">
+        <compose view="${panel.viewUrl}"></compose>
+      </div>
+    </div>
+  </div>
+</template>

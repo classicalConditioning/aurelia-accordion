@@ -1,6 +1,6 @@
 {
   "name": "aurelia-accordion",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Aurelia accordion plugin.",
   "keywords": [
     "aurelia",
@@ -12,7 +12,7 @@
   },
   "license": "GNUGPLv3",
   "author": "Alex Pavlov (https://github.com/classicalConditioning)",
-  "main": "dist/commonjs/index.js",
+  "main": "dist/commonjs/aurelia-accordion.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/classicalConditioning/aurelia-accordion"
